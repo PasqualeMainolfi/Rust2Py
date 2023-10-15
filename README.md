@@ -64,11 +64,12 @@
      ```  
 
     find .whl in `/target/wheels`  
+    Also on macOS, you will need to rename the output (`/target/release/) from *.dylib to *.so. On Windows, you will need to rename the output from *.dll to *.pyd.  
 
      compile and install package. Typing:
 
      ```sh
-     maturin build --release
+     maturin develop --release
      ```  
 
 7. create python project and test package
